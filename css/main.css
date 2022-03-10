@@ -3654,6 +3654,10 @@ nav .nav-content ul li a.primary-btn.btn-white {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.form-section .form-col-left .primary-btn {
+    font-size: 14px;
+}
+
 footer {
     background-color: var(--main-brand-color);
     padding-top: 140px;
@@ -3672,12 +3676,17 @@ footer .footer-sm ul {
 }
 
 footer .footer-sm ul li {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    font-size: 16px;
 }
 
 footer .footer-sm ul li a {
     color: var(--main-brand-yellow);
     text-decoration: none;
+}
+
+footer .footer-sm ul li a:hover {
+    text-decoration: underline;
 }
 
 footer .footer-middle {
@@ -3705,8 +3714,13 @@ footer .footer-middle .footer-middle-left ul li a {
     text-decoration: none;
 }
 
+footer .footer-middle .footer-middle-left ul li a:hover {
+    text-decoration: underline;
+}
+
 footer .footer-middle .footer-middle-left ul li {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
+    font-size: 16px;
 }
 
 footer .footer-middle .footer-middle-left ul li:last-child {
@@ -3779,6 +3793,7 @@ footer .footer-lower {
 footer .footer-lower .footer-lower-right a {
     color: #979797;
     text-decoration: none;
+    font-size: 15px;
 }
 
 footer .footer-lower .footer-lower-right a:hover {
@@ -3857,5 +3872,14 @@ footer .footer-lower .footer-lower-right a:hover {
     }
     footer .footer-lower .footer-lower-left {
         margin-bottom: 5px;
+    }
+    footer .footer-sm ul {
+        margin-bottom: 30px;
+    }
+    footer .footer-middle .footer-middle-left ul {
+        margin-bottom: 30px;
+    }
+    footer .footer-middle .footer-middle-left .col-sm-6:last-child ul {
+        margin-bottom: 0px;
     }
 }
