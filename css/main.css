@@ -3810,6 +3810,9 @@ footer .footer-lower .footer-lower-right a:hover {
         width: 100%;
         right: 5%;
     }
+    footer {
+        padding-top: 50px;
+    }
     footer .footer-sm {
         max-width: 100%;
     }
