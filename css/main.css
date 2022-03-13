@@ -2948,6 +2948,12 @@ p {
     margin-left: auto;
 }
 
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 92%;
+    }
+}
+
 .primary-btn {
     font-size: var(--xl-screen-fonts);
     display: inline-block;
@@ -3083,8 +3089,8 @@ nav .nav-content ul li a.primary-btn.btn-white {
     max-width: 618px;
     font-weight: 700;
     font-size: 48px;
-    line-height: 55px;
-    letter-spacing: -2.5px;
+    line-height: 52px;
+    letter-spacing: -2.0px;
     color: var(--brand-white);
     margin-top: 0px;
 }
@@ -3094,10 +3100,10 @@ nav .nav-content ul li a.primary-btn.btn-white {
     margin-bottom: 0px;
     font-weight: 400;
     font-size: 24px;
-    line-height: 31px;
+    line-height: 35px;
     letter-spacing: -0.63px;
     color: var(--brand-white);
-    max-width: 445px;
+    max-width: 395px;
 }
 
 .banner-lower {
@@ -3142,14 +3148,13 @@ nav .nav-content ul li a.primary-btn.btn-white {
 .banner-lower ul li p {
     color: #344293;
     max-width: 169px;
-    margin: 0 auto;
     font-weight: 600;
 }
 
 @media only screen and (max-width: 1200px) {
     .banner-section .banner-text h1 {
         font-size: 38px;
-        line-height: 45px;
+        line-height: 41px;
     }
     .banner-section .banner-text h5 {
         font-size: 20px;
@@ -3185,12 +3190,22 @@ nav .nav-content ul li a.primary-btn.btn-white {
     }
     .banner-section .banner-text h1 {
         font-size: 26px;
-        line-height: 33px;
+        line-height: 29px;
         letter-spacing: -0.5px;
     }
     .banner-section .banner-text h5 {
         font-size: 18px;
         line-height: 25px;
+    }
+    .banner-section .nav-logo img {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .banner-lower ul li p {
+        font-size: 12px;
+        line-height: 15px;
     }
 }
 
@@ -3254,6 +3269,10 @@ nav .nav-content ul li a.primary-btn.btn-white {
     .solutions-section .section-sub-title {
         font-size: 22px;
         line-height: 27px;
+        margin-bottom: 2px!important;
+    }
+    .solutions-section {
+        padding-top: 85px;
     }
     .section-card:last-child {
         margin-bottom: 0px;
@@ -3362,6 +3381,9 @@ nav .nav-content ul li a.primary-btn.btn-white {
     .customers-section .customers-section-inner .row {
         max-width: 90%;
     }
+    .customers-section .customers-section-inner .row .col-md-6:last-child .customers-card {
+        margin-bottom: 0px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -3379,6 +3401,9 @@ nav .nav-content ul li a.primary-btn.btn-white {
     }
     .customers-section .customers-section-inner .row {
         max-width: 100%;
+    }
+    .customers-card {
+        padding: 2rem!important;
     }
 }
 
@@ -3455,6 +3480,13 @@ nav .nav-content ul li a.primary-btn.btn-white {
     .payments-section {
         padding-bottom: 40px;
     }
+    .payments-section .payment-card .img-box {
+        width: 100px;
+        height: 100px;
+    }
+    .payments-section .payment-card .img-box img {
+        width: 45px;
+    }
 }
 
 .finance-section {
@@ -3529,6 +3561,16 @@ nav .nav-content ul li a.primary-btn.btn-white {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .finance-section .finance-card .img-box {
+        width: 160px;
+        height: 160px;
+    }
+    .finance-section .finance-card .img-box img {
+        width: 85px;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     .finance-section .finance-col h3 {
         font-size: 22px;
@@ -3543,11 +3585,11 @@ nav .nav-content ul li a.primary-btn.btn-white {
         padding-right: 0px;
     }
     .finance-section .finance-card .img-box {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
     }
     .finance-section .finance-card .img-box img {
-        width: 75px;
+        width: 60px;
     }
 }
 
@@ -3574,7 +3616,7 @@ nav .nav-content ul li a.primary-btn.btn-white {
     width: 100%;
     position: absolute;
     right: 7%;
-    top: -81px;
+    top: -63px;
 }
 
 .form-section .form-box h3 {
@@ -3591,6 +3633,10 @@ nav .nav-content ul li a.primary-btn.btn-white {
 
 .form-section .form-col-left {
     max-width: 540px;
+}
+
+.form-section .form-col-left p {
+    max-width: 220px;
 }
 
 .form-section .form-col-left h2 {
@@ -3725,7 +3771,7 @@ footer .footer-middle .footer-middle-left ul li a:hover {
 }
 
 footer .footer-middle .footer-middle-left ul li {
-    margin-bottom: 2px;
+    margin-bottom: 11px;
     font-size: 16px;
 }
 
@@ -3812,6 +3858,7 @@ footer .footer-lower .footer-lower-right a:hover {
         max-width: 400px;
         width: 100%;
         right: 5%;
+        top: -59px;
     }
     footer .footer-sm {
         max-width: calc(95% - 400px);
@@ -3825,11 +3872,24 @@ footer .footer-lower .footer-lower-right a:hover {
     }
 }
 
+@media only screen and (max-width: 1100px) {
+    .form-section .form-col-left {
+        max-width: 457px;
+    }
+}
+
 @media only screen and (max-width: 976px) {
     .form-section .form-box {
         max-width: 400px;
         width: 100%;
         right: 5%;
+        border-radius: 20px
+    }
+    .form-section .form-col-left {
+        max-width: 100%;
+    }
+    .form-section .form-col-left p {
+        max-width: 100%;
     }
     footer {
         padding-top: 50px;
